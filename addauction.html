@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Auction</title>
+    <script>
+            function cal() {
+               var cost=0;
+               let weight=0;
+               var s=document.getElementById("source").value;
+               var d=document.getElementById("destination").value;
+               for(var i=0;i<document.regis.vehicle1.length;i++)
+                            {
+                                if(document.regis.vehicle1[i].checked)
+                                {  
+                                weight =document.regis.vehicle1[i].value;
+                                console.log(weight);
+                                break;
+                                }
+                           
+                            }
+                 
+                                     
+              
+               if(weight=="1")
+               {
+                if(s=="Virar" && d=="Virar" || s=="Vasai" && d=="Vasai" || s=="Nallasopara" && d=="Nallasopara" || s=="Naigaon" && d=="Naigaon"|| s=="Bhayander" && d=="Bhayander"|| s=="Borivali" && d=="Borivali"|| s=="Dahisar" && d=="Dahisar"|| s=="MiraRoad" && d=="MiraRoad")
+                   {
+                       cost=400+1000+200;
+                   }
+                   if(s=="Virar" && d=="Nallasopara" ||d=="Virar" && s=="Nallasopara"|| s=="Nallasopara" && d=="Vasai"|| s=="Vasai" && d=="Nallasopara" ||s=="Vasai" && d=="Naigaon" || s=="Naigaon" && d=="Vasai"|| s=="Bhayander" && d=="Naigaon"||s=="Naigaon" && d=="Bhayander"||s=="Bhayander" && d=="MiraRoad"||s=="MiraRoad" && d=="Bhayander"|| s=="Dahisar" && d=="Borivali"||s=="Borivali" && d=="Dahisar"|| s=="Dahisar" && d=="MiraRoad"|| s=="MiraRoad" && d=="Dahisar")
+                   {
+                       cost=400+1000+300;
+                   }
+                   if(s=="Virar" && d=="Vasai" || d=="Virar" && s=="Vasai"|| s=="Nallasopara" && d=="Naigaon"|| s=="Naigaon" && d=="Nallasopara" ||s=="Vasai" && d=="Bhayander" || s=="Bhayander" && d=="Vasai"|| s=="MiraRoad" && d=="Naigaon"||s=="Naigaon" && d=="MiraRoad"||s=="Bhayander" && d=="Dahisar"||s=="Dahisar" && d=="Bhayander"||s=="Borivali" && d=="Miraroad"|| s=="MiraRoad" && d=="Borivali")
+                   {
+                       cost=400+1000+400;
+                   }
+           
+                   if(s=="Virar" && d=="Naigaon" ||d=="Virar" && s=="Naigaon"|| s=="Nallasopara" && d=="Bhayander"|| s=="Bhayander" && d=="Nallasopara" ||s=="Vasai" && d=="MiraRoad" || s=="MiraRoad" && d=="Vasai"|| s=="Dahisar" && d=="Naigaon"||s=="Naigaon" && d=="Dahisar"||s=="Bhayander" && d=="Borivali"||s=="Borivali" && d=="Bhayander")
+                   {
+                       cost=400+1000+500;
+                   }
+           
+                  if(s=="Virar" && d=="Bhayander" ||d=="Virar" && s=="Bhayander"|| s=="Nallasopara" && d=="MiraRoad"|| s=="MiraRoad" && d=="Nallasopara" ||s=="Vasai" && d=="Dahisar" || s=="Dahisar" && d=="Vasai"|| s=="Borivali" && d=="Naigaon"||s=="Naigaon" && d=="Borivali")
+                   {
+                       cost=400+1000+600;
+                   }
+                   if(s=="Virar" && d=="MiraRoad" ||d=="Virar" && s=="MiraRoad"|| s=="Nallasopara" && d=="Dahisar"|| s=="Dahisar" && d=="Nallasopara" ||s=="Vasai" && d=="Borivali" || s=="Borivali" && d=="Vasai")
+                   {
+                       cost=400+1000+700;
+                   }
+                   if(s=="Virar" && d=="Dahisar" ||d=="Virar" && s=="Dahisar"|| s=="Nallasopara" && d=="Borivali"|| s=="Borivali" && d=="Nallasopara")
+                   {
+                       cost=400+1000+800;
+                   }
+                   if(s=="Virar" && d=="Borivali" ||d=="Virar" && s=="Borivali")
+                   {
+                       cost=400+1000+900;
+                   }
+                   
+               }
+           
+               if(weight=="2")
+               {
+                   if(s=="Virar" && d=="Virar" || s=="Vasai" && d=="Vasai" || s=="Nallasopara" && d=="Nallasopara" || s=="Naigaon" && d=="Naigaon"|| s=="Bhayander" && d=="Bhayander"|| s=="Borivali" && d=="Borivali"|| s=="Dahisar" && d=="Dahisar"|| s=="MiraRoad" && d=="MiraRoad")
+                   {
+                       cost=800+1500+200;
+                   }
+                   if(s=="Virar" && d=="Nallasopara" ||d=="Virar" && s=="Nallasopara"|| s=="Nallasopara" && d=="Vasai"|| s=="Vasai" && d=="Nallasopara" ||s=="Vasai" && d=="Naigaon" || s=="Naigaon" && d=="Vasai"|| s=="Bhayander" && d=="Naigaon"||s=="Naigaon" && d=="Bhayander"||s=="Bhayander" && d=="MiraRoad"||s=="MiraRoad" && d=="Bhayander"|| s=="Dahisar" && d=="Borivali"||s=="Borivali" && d=="Dahisar"|| s=="Dahisar" && d=="MiraRoad"|| s=="MiraRoad" && d=="Dahisar")
+                   {
+                       cost=800+1500+300;
+                   }
+                   if(s=="Virar" && d=="Vasai" ||d=="Virar" && s=="Vasai"|| s=="Nallasopara" && d=="Naigaon"|| s=="Naigaon" && d=="Nallasopara" ||s=="Vasai" && d=="Bhayander" || s=="Bhayander" && d=="Vasai"|| s=="MiraRoad" && d=="Naigaon"||s=="Naigaon" && d=="MiraRoad"||s=="Bhayander" && d=="Dahisar"||s=="Dahisar" && d=="Bhayander"||s=="Borivali" && d=="Miraroad"|| s=="MiraRoad" && d=="Borivali")
+                   {
+                       cost=800+1500+400;
+                   }
+           
+                   if(s=="Virar" && d=="Naigaon" ||d=="Virar" && s=="Naigaon"|| s=="Nallasopara" && d=="Bhayander"|| s=="Bhayander" && d=="Nallasopara" ||s=="Vasai" && d=="MiraRoad" || s=="MiraRoad" && d=="Vasai"|| s=="Dahisar" && d=="Naigaon"||s=="Naigaon" && d=="Dahisar"||s=="Bhayander" && d=="Borivali"||s=="Borivali" && d=="Bhayander")
+                   {
+                       cost=800+1500+500;
+                   }
+           
+                  if(s=="Virar" && d=="Bhayander" ||d=="Virar" && s=="Bhayander"|| s=="Nallasopara" && d=="MiraRoad"|| s=="MiraRoad" && d=="Nallasopara" ||s=="Vasai" && d=="Dahisar" || s=="Dahisar" && d=="Vasai"|| s=="Borivali" && d=="Naigaon"||s=="Naigaon" && d=="Borivali")
+                   {
+                       cost=800+1500+600;
+                   }
+                   if(s=="Virar" && d=="MiraRoad" ||d=="Virar" && s=="MiraRoad"|| s=="Nallasopara" && d=="Dahisar"|| s=="Dahisar" && d=="Nallasopara" ||s=="Vasai" && d=="Borivali" || s=="Borivali" && d=="Vasai")
+                   {
+                       cost=800+1500+700;
+                   }
+                   if(s=="Virar" && d=="Dahisar" ||d=="Virar" && s=="Dahisar"|| s=="Nallasopara" && d=="Borivali"|| s=="Borivali" && d=="Nallasopara")
+                   {
+                       cost=800+1500+800;
+                   }
+                   if(s=="Virar" && d=="Borivali" ||d=="Virar" && s=="Borivali")
+                   {
+                       cost=800+1500+900;
+                   }
+                   
+               }
+               if(weight=="3")
+               {
+                   if(s=="Virar" && d=="Virar" || s=="Vasai" && d=="Vasai" || s=="Nallasopara" && d=="Nallasopara" || s=="Naigaon" && d=="Naigaon"|| s=="Bhayander" && d=="Bhayander"|| s=="Borivali" && d=="Borivali"|| s=="Dahisar" && d=="Dahisar"|| s=="MiraRoad" && d=="MiraRoad")
+                   {
+                       cost=1200+2000+200;
+                   }
+                   if(s=="Virar" && d=="Nallasopara" ||d=="Virar" && s=="Nallasopara"|| s=="Nallasopara" && d=="Vasai"|| s=="Vasai" && d=="Nallasopara" ||s=="Vasai" && d=="Naigaon" || s=="Naigaon" && d=="Vasai"|| s=="Bhayander" && d=="Naigaon"||s=="Naigaon" && d=="Bhayander"||s=="Bhayander" && d=="MiraRoad"||s=="MiraRoad" && d=="Bhayander"|| s=="Dahisar" && d=="Borivali"||s=="Borivali" && d=="Dahisar"|| s=="Dahisar" && d=="MiraRoad"|| s=="MiraRoad" && d=="Dahisar")
+                   {
+                       cost=1200+2000+300;
+                   }
+                   if(s=="Virar" && d=="Vasai" ||d=="Virar" && s=="Vasai"|| s=="Nallasopara" && d=="Naigaon"|| s=="Naigaon" && d=="Nallasopara" ||s=="Vasai" && d=="Bhayander" || s=="Bhayander" && d=="Vasai"|| s=="MiraRoad" && d=="Naigaon"||s=="Naigaon" && d=="MiraRoad"||s=="Bhayander" && d=="Dahisar"||s=="Dahisar" && d=="Bhayander"||s=="Borivali" && d=="Miraroad"|| s=="MiraRoad" && d=="Borivali")
+                   {
+                       cost=1200+2000+400;
+                   }
+           
+                   if(s=="Virar" && d=="Naigaon" ||d=="Virar" && s=="Naigaon"|| s=="Nallasopara" && d=="Bhayander"|| s=="Bhayander" && d=="Nallasopara" ||s=="Vasai" && d=="MiraRoad" || s=="MiraRoad" && d=="Vasai"|| s=="Dahisar" && d=="Naigaon"||s=="Naigaon" && d=="Dahisar"||s=="Bhayander" && d=="Borivali"||s=="Borivali" && d=="Bhayander")
+                   {
+                       cost=1200+2000+500;
+                   }
+           
+                  if(s=="Virar" && d=="Bhayander" ||d=="Virar" && s=="Bhayander"|| s=="Nallasopara" && d=="MiraRoad"|| s=="MiraRoad" && d=="Nallasopara" ||s=="Vasai" && d=="Dahisar" || s=="Dahisar" && d=="Vasai"|| s=="Borivali" && d=="Naigaon"||s=="Naigaon" && d=="Borivali")
+                   {
+                       cost=1200+2000+600;
+                   }
+                   if(s=="Virar" && d=="MiraRoad" ||d=="Virar" && s=="MiraRoad"|| s=="Nallasopara" && d=="Dahisar"|| s=="Dahisar" && d=="Nallasopara" ||s=="Vasai" && d=="Borivali" || s=="Borivali" && d=="Vasai")
+                   {
+                       cost=1200+2000+700;
+                   }
+                   if(s=="Virar" && d=="Dahisar" ||d=="Virar" && s=="Dahisar"|| s=="Nallasopara" && d=="Borivali"|| s=="Borivali" && d=="Nallasopara")
+                   {
+                       cost=1200+2000+800;
+                   }
+                   if(s=="Virar" && d=="Borivali" ||d=="Virar" && s=="Borivali")
+                   {
+                       cost=1200+2000+900;
+                   }
+                  
+               }
+               if(weight=="4")
+               {
+                   if(s=="Virar" && d=="Virar" || s=="Vasai" && d=="Vasai" || s=="Nallasopara" && d=="Nallasopara" || s=="Naigaon" && d=="Naigaon"|| s=="Bhayander" && d=="Bhayander"|| s=="Borivali" && d=="Borivali"|| s=="Dahisar" && d=="Dahisar"|| s=="MiraRoad" && d=="MiraRoad")
+                   {
+                       cost=1600+3000+200;
+                   }
+                   if(s=="Virar" && d=="Nallasopara" ||d=="Virar" && s=="Nallasopara"|| s=="Nallasopara" && d=="Vasai"|| s=="Vasai" && d=="Nallasopara" ||s=="Vasai" && d=="Naigaon" || s=="Naigaon" && d=="Vasai"|| s=="Bhayander" && d=="Naigaon"||s=="Naigaon" && d=="Bhayander"||s=="Bhayander" && d=="MiraRoad"||s=="MiraRoad" && d=="Bhayander"|| s=="Dahisar" && d=="Borivali"||s=="Borivali" && d=="Dahisar"|| s=="Dahisar" && d=="MiraRoad"|| s=="MiraRoad" && d=="Dahisar")
+                   {
+                       cost=1600+3000+300;
+                   }
+                   if(s=="Virar" && d=="Vasai" ||d=="Virar" && s=="Vasai"|| s=="Nallasopara" && d=="Naigaon"|| s=="Naigaon" && d=="Nallasopara" ||s=="Vasai" && d=="Bhayander" || s=="Bhayander" && d=="Vasai"|| s=="MiraRoad" && d=="Naigaon"||s=="Naigaon" && d=="MiraRoad"||s=="Bhayander" && d=="Dahisar"||s=="Dahisar" && d=="Bhayander"||s=="Borivali" && d=="Miraroad"|| s=="MiraRoad" && d=="Borivali")
+                   {
+                       cost=1600+3000+400;
+                   }
+           
+                   if(s=="Virar" && d=="Naigaon" ||d=="Virar" && s=="Naigaon"|| s=="Nallasopara" && d=="Bhayander"|| s=="Bhayander" && d=="Nallasopara" ||s=="Vasai" && d=="MiraRoad" || s=="MiraRoad" && d=="Vasai"|| s=="Dahisar" && d=="Naigaon"||s=="Naigaon" && d=="Dahisar"||s=="Bhayander" && d=="Borivali"||s=="Borivali" && d=="Bhayander")
+                   {
+                       cost=1600+3000+500;
+                   }
+           
+                  if(s=="Virar" && d=="Bhayander" ||d=="Virar" && s=="Bhayander"|| s=="Nallasopara" && d=="MiraRoad"|| s=="MiraRoad" && d=="Nallasopara" ||s=="Vasai" && d=="Dahisar" || s=="Dahisar" && d=="Vasai"|| s=="Borivali" && d=="Naigaon"||s=="Naigaon" && d=="Borivali")
+                   {
+                       cost=1600+3000+600;
+                   }
+                   if(s=="Virar" && d=="MiraRoad" ||d=="Virar" && s=="MiraRoad"|| s=="Nallasopara" && d=="Dahisar"|| s=="Dahisar" && d=="Nallasopara" ||s=="Vasai" && d=="Borivali" || s=="Borivali" && d=="Vasai")
+                   {
+                       cost=1600+3000+700;
+                   }
+                   if(s=="Virar" && d=="Dahisar" ||d=="Virar" && s=="Dahisar"|| s=="Nallasopara" && d=="Borivali"|| s=="Borivali" && d=="Nallasopara")
+                   {
+                       cost=1600+3000+800;
+                   }
+                   if(s=="Virar" && d=="Borivali" ||d=="Virar" && s=="Borivali")
+                   {
+                       cost=1600+3000+900;
+                   }
+                  
+               }
+              
+               document.regis.fcost.value=cost;
+               return true;
+            }
+            
+           function datee(){
+            var a=document.getElementById("d1").value;
+            var b=document.getElementById("d2").value;
+            if(a<=b)
+               return true;
+            else
+            {
+             alert("please enter valid start date and end date");
+             return false;
+           }}
+           function datee1(){
+            var a=document.getElementById("d2").value;
+            var b=document.getElementById("d3").value;
+            if(a<=b)
+               return true;
+            else
+             {alert("please enter valid pickup date");
+             return false;
+             }
+           }
+            
+        </script>
+      
+</head>
+<body>
+    <header>
+
+        <link rel="stylesheet" href="addauction.css">
+
+
+        <div class="reg">
+        
+         <form name="regis"  action="home.html" id="reg">
+          <h1>sdasdasd</h1>
+            <h2>Add Auction</h2><br>
+                <label><b>Name:</b></label><br><br><br>
+                <label><b>Material Description:</b></label><br><br><input type="text" placeholder="Eg: Book,cement,etc." name="desc" id="desc" pattern="[a-zA-Z]{3,11}" required></input><br><br><br>
+               <label><b>Load Weight(Approximate):</b><br></label><br><br><input type="radio" id="vehicle1" name="vehicle1" value="1" required><label>1-100kg</label></input><br>
+                <input type="radio" name="vehicle1" id="vehicle2" value="2"><label>101-200kg</label></input><br>
+                <input type="radio" name="vehicle1" id="vehicle3" value="3"><label>201-500kg</label></input><br>
+                <input type="radio" name="vehicle1" id="vehicle4" value="4"><label>More than 500kg</label></input><br><br>
+                <label><b>Source Location:</b></label><br><br><div id="myForm">
+                    <select  id="source" required >
+                            <option value="" disabled selected hidden><label>Your Source Location.....</label></option>
+                             <option value="Virar"><label>Virar</label></option>
+                             <option value="Nallasopara"><label>Nallasopara</label></option>
+                             <option value="Vasai"><label>Vasai</label></option>
+                             <option value="Naigaon"><label>Naigaon</label></option>
+                             <option value="Bhayander"><label>Bhayander</label></option>
+                             <option value="MiraRoad"><label>MiraRoad</label></option>
+                             <option value="Dahisar"><label>Dahisar</label></option>
+                             <option value="Borivali"><label>Borivali</label></option>
+                         </select>
+                         </div><br><br>
+                         <label><b>Destination Location:</b></label><br><br><div id="myForm">
+                            <select id="destination" required >
+                                    <option value="" disabled selected hidden><label>Your Destination Location.....</label></option>
+                                     <option value="Virar"><label>Virar</label></option>
+                                     <option value="Nallasopara"><label>Nallasopara</label></option>
+                                     <option value="Vasai"><label>Vasai</label></option>
+                                      <option value="Naigaon"><label>Naigaon</label></option>
+                                     <option value="Bhayander"><label>Bhayander</label></option>
+                                     <option value="MiraRoad"><label>MiraRoad</label></option>
+                                     <option value="Dahisar"><label>Dahisar</label></option>
+                                     <option value="Borivali"><label>Borivali</label></option>
+                                 </select>
+                                 </div><br><br>
+                                 <input type="text" name="fcost" id="fcost" disabled><br><br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      <button type="button" id="but" onclick=" return cal()"> Calculate Cost</button>
+                                 
+                           <br><br>
+                           <label><b>Auction Start Date and Time:</b></label><br><br><input type="datetime-local" id="d1"></input><br><br>      
+                           <label><b>Auction Ending Date and Time:</b></label><br><br><input type="datetime-local" id="d2" onblur="return datee()"></input><br><br>             
+                           <label><b>PickUp Date:</b></label><br><br><input type="date" id="d3" onblur="return datee1()"></input><br><br> 
+                           <label><b>Any Suggestion:</b></label><br><br><textarea placeholder="Enter your Suggestions (if any)" name="sugg" id="sugg" pattern="[a-zA-Z]{5,30}"></textarea><br><br>            
+                            
+            <input type="checkbox" required id="ch"></input><label> I Agree your Terms and Conditions</b></label><br><br>
+                   <input type="submit" value="Submit" id="subb"><br><br> <input type="reset" value="Reset" id="ree"></input>  
+       
+       
+       <h1>sdfsa</h1>
+                   
+        </form>	 
+        </div>
+       </header>
+              
+</body>
+</html>

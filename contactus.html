@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head><title>Contact Us</title></head> 
+<link rel="stylesheet" href="contact.css">
+<body>
+<header>
+<div class="main">
+<div class="logo">
+<a href="hm.html"><img src="nutrition.png"></a>
+</div>
+<ul>
+   <li><a href="home.html"><b>Home</a></li>
+   <li><a href="login.html">Login/Signup</a></li>
+   <li><a href="#">pending</a></li>
+   <li class="active"><a href="contactus.html">Contact Us</b></a></li>
+</ul>
+</div>
+<div class="container">
+  <form action="home.html">
+
+    <label for="fname"><h3>First Name</h3></label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." pattern="[a-zA-Z]{3,11}" required>
+
+    <label for="lname"><h3>Last Name</h3></label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." pattern="[a-zA-Z]{3,11}"required>
+    <label for="email"><h3>Email Id</h3></label>
+	 <input type="email" id="email" name="maill" placeholder="Your email-id.." required>
+
+    <label for="country"><h3>Country</h3></label>
+    <select id="country" name="country" required>
+      <option value="india">India</option>
+      <option value="uk">United Kingdom</option>
+      <option value="usa">USA</option>
+	  <option value="other">Other</option>
+    </select>
+
+    <label for="subject"><h3>Subject</h3></label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>

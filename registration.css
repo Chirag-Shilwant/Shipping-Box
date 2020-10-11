@@ -1,0 +1,127 @@
+*{
+    padding:0;
+   
+    margin:0px;
+   }
+   
+   header{
+        /*background-image:url(wall.jpg);*/
+         content:200vh;
+        background-size:cover;
+        background-position:centre;
+        background-image: linear-gradient(to bottom right, red, yellow);
+        /* background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));*/
+        
+   }	
+   ul li.active a{
+       background-color:white;
+       color:black;
+    }
+    
+      ul{
+        float:right;
+        list-style-type:none;
+        margin-top:25px;
+        
+    }
+    ul li{
+        display:inline-block;
+    }
+    ul li a{
+        text-decoration:none;
+        color:white;
+        padding:5px 20px;
+        border: 1px solid transparent;
+        transition: 0.6s ease;
+    }
+    ul li a:hover{
+        background-color:white;
+        color:black;
+       
+    }
+    h3{
+       color:white;
+       
+   }
+   
+    .main{
+   max-width:1200px;
+        margin:auto;
+    }
+    
+    
+   .logo img{
+        margin-left:10px;
+        float:left;
+        width:150px;
+        height:auto;
+        margin-top:5px;
+    }
+    
+   .reg{
+       
+       width:37%;
+       margin:auto;
+       background-color:rgb(0,0,0,0.5);
+           
+   }
+   h1{
+       color:transparent;
+   }
+   #ma{
+       color:black;
+       font-size:20px;
+       font-style:italic;
+       
+   }
+   h4{
+       color:red;
+   }
+   #ch{
+       color:white;
+       font-size:20px;
+       font-style:italic;
+       
+   }
+   label{
+       color:white;
+       font-size:20px;
+       
+   }
+   #reg{
+       
+       width:60%;
+       margin:auto;
+   }
+   
+   #pass,#city,#email,#phone,#height,#name,#weight{
+       width:300px;
+       outline:0;
+       padding:5px;
+       border:3px groove;
+   }
+   
+   #subb{
+       width:200px;
+       outline:0;
+       padding:5px;
+       border:3px groove;
+       color:white;
+       font-size:18px;
+       font-style:italic;
+       background-color:darkgreen;
+       
+   }
+   #ree{
+       width:200px;
+       outline:0;
+       padding:5px;
+       border:3px groove;
+       color:white;
+       font-size:18px;
+       font-style:italic;
+       background-color:red;
+       
+       
+       
+   }
